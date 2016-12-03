@@ -1,0 +1,11 @@
+<h1>Minha primeira Directive</h1>
+<div>
+    <input type="radio" name="colors" (click)="color='lightgreen'">Verde
+    <input type="radio" name="colors" (click)="color='yellow'">Amarelo
+    <input type="radio" name="colors" (click)="color='blue'">Azul
+</div>
+<p [minhaDirective]="color">Minha directive!</p>
+
+<p [minhaDirective]="color" [defaultColor]="'violet'">
+    Minha directive com a cor default!
+</p>
